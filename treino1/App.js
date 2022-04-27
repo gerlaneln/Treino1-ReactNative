@@ -1,12 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, SafeAreaView } from 'react-native';
+
+import Topo from './source/telas/Astronomia/Topo.js';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaView style={styles.container}>
+      
+      <Topo/>
+
+
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 
